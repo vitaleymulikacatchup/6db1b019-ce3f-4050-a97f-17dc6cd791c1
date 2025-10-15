@@ -8,6 +8,7 @@ import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Zap, Link, Star } from 'lucide-react';
 
 const assetMap = [
   { "id": "hero-image", "url": "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "High-End Gaming PC Interior with Colorful RGB Lights" },
@@ -61,8 +62,8 @@ export default function Home() {
             title="Features"
             description="Discover our groundbreaking features"
             features={[
-              { title: "Advanced AI", description: "Sophisticated AI tools", icon: { name: 'Zap' } },
-              { title: "Seamless Integration", description: "Easy to integrate", icon: { name: 'Link' } }
+              { title: "Advanced AI", description: "Sophisticated AI tools", icon: Zap },
+              { title: "Seamless Integration", description: "Easy to integrate", icon: Link }
             ]}
           />
         </div>
@@ -93,7 +94,7 @@ export default function Home() {
                   { text: "Contact Sales", href: "contact" }
                 ],
                 features: ["Unlimited users", "Priority support"],
-                badgeIcon: { name: 'Star' }
+                badgeIcon: Star
               }
             ]}
           />
