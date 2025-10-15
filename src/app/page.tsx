@@ -9,7 +9,11 @@ import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
 
-const assetMap = /* provided JSON array */;
+const assetMap = [
+  { "id": "hero-image", "url": "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "High-End Gaming PC Interior with Colorful RGB Lights" },
+  { "id": "feature-image", "url": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A woman with digital code projections on her face, representing technology and future concepts." },
+  { "id": "team-image", "url": "https://images.pexels.com/photos/7640798/pexels-photo-7640798.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Dynamic office setting with diverse team members actively engaged in a discussion." }
+];
 
 export default function Home() {
   return (
@@ -19,7 +23,7 @@ export default function Home() {
       borderRadius="rounded"
     >
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingInline 
+        <NavbarLayoutFloatingInline
           navItems={[
             { name: "Home", id: "home" },
             { name: "Features", id: "features" },
@@ -101,7 +105,7 @@ export default function Home() {
             title="Meet the Team"
             members={[
               { id: "1", name: "Alex G.", role: "Developer", imageSrc: assetMap.find(a => a.id === "team-image")?.url },
-              { id: "2", name: "Jamie L.", role: "Designer", imageSrc: assetMap.find(a => a.id === "team-image")?.url } 
+              { id: "2", name: "Jamie L.", role: "Designer", imageSrc: assetMap.find(a => a.id === "team-image")?.url }
             ]}
           />
         </div>
