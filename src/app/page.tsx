@@ -61,8 +61,8 @@ export default function Home() {
             title="Features"
             description="Discover our groundbreaking features"
             features={[
-              { title: "Advanced AI", description: "Sophisticated AI tools", icon: "Zap" },
-              { title: "Seamless Integration", description: "Easy to integrate", icon: "Link" }
+              { title: "Advanced AI", description: "Sophisticated AI tools", icon: Zap },
+              { title: "Seamless Integration", description: "Easy to integrate", icon: Link }
             ]}
           />
         </div>
