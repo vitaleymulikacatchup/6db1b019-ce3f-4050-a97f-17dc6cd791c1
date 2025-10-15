@@ -51,7 +51,10 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6 bg-blue-50">
           <TextSplitAbout
             title="About Us"
-            description={["We create tech solutions that empower companies.", "Our mission is to lead in AI technology."]}
+            description={[
+              "We create tech solutions that empower companies.",
+              "Our mission is to lead in AI technology."
+            ]}
             buttons={[{ text: "Learn More", href: "about" }]}
           />
         </div>
